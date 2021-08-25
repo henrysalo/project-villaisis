@@ -1,0 +1,19 @@
+button{
+    margin: 50px;
+    color: white;
+    border-style: solid;
+    border-radius: 25px 25px 25px 25px;
+    border-color: gold;
+    list-style-type: none;
+    background-color: rgb(1, 71, 39);
+    transition: background-color .5s;
+    display: flex;
+    justify-content: center;
+}
+
+
+button:hover {
+    background-color: rgba(24, 218, 115, 0.89);
+    color: blanchedalmond;
+    border-color: blanchedalmond
+}

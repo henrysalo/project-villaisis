@@ -1,0 +1,11 @@
+nav {
+    /* background-color: black; */
+    padding: 10px;
+    display: flexbox;
+    flex-direction: row-reverse;
+    background-image: url("../../../assets/fondoHeader.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
