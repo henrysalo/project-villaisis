@@ -11,6 +11,16 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
+
+  listaBotones:any[]=[{
+    nombre: "Cristales de sabila",
+    link: "component1"
+  },{
+    nombre: "Pencas por mayor",
+    link: "component2"
+  },{
+    nombre: "Sabila ornamental",
+    link: "component3"
+  }];
 
 }

@@ -1,0 +1,12 @@
+<div class="container" style="max-width: 100ch">
+    <div *ngIf="(inside === 'false')||(inside === null)">
+      <div>
+        <button type="button" (click)="loginWithGoogle()" class="btn btn-primary">
+          Accede y contáctanos <i class="fab fa-google"></i>
+        </button>
+      </div>
+    </div>
+    <div *ngIf="(inside === 'true')">
+      <button type="button" (click)="logOut()" routerLinkActive='active' routerLink='home' class="btn btn-danger">Salida <i class="fas fa-sign-out-alt"></i></button>
+    </div>
+  </div>

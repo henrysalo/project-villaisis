@@ -1,4 +1,7 @@
+import { Cliente } from '../../../models/cliente';
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ApiclientService } from "../../../services/apiclient.service";
 
 @Component({
   selector: 'app-component1',
@@ -6,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./component1.component.css']
 })
 export class Component1Component implements OnInit {
+
 
   constructor() { }
 

@@ -1,0 +1,6 @@
+.imagen{
+    width: 100%;
+    height: 500px;
+    background-image: url("../../../../assets/carousels/componente1/cristalSabila.jpg");
+    background-size: cover;
+  }

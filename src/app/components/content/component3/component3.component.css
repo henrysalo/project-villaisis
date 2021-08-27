@@ -1,0 +1,6 @@
+.imagen{
+    width: 100%;
+    height: 500px;
+    background-image: url("../../../../assets/carousels/componente3/sabilaOrnito1.jpg");
+    background-size: cover;
+  }

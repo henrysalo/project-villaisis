@@ -1,0 +1,8 @@
+<div class="sideBar">
+    <ul class="sidebarItem">
+        <div *ngFor="let boton of listaBotones">
+            <button class="productLink" routerLinkActive='active' routerLink={{boton.link}}><p>{{boton.nombre}}</p></button>
+        </div>
+        <app-login></app-login>
+    </ul>
+</div>

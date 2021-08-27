@@ -1,0 +1,55 @@
+<div [hidden]="submitted">
+
+    <img src={{usuarioLoggeado.Foto}} alt="{{usuarioLoggeado.Nombre}}" srcset="">
+    <button type="submit" class="btn btn-success" (click)="onSubmit()" [disabled]="!clienteForm.form.valid">Enviar mis datos</button>
+    <h1>Dejanos tu contacto:</h1>
+    <form (ngSubmit)="onSubmit()" #clienteForm="ngForm">
+
+<!-- Nombre -->
+
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" required [(ngModel)]="model.Nombre" name="nombre" #nombre="ngModel">
+          </div>
+
+<!-- Apellido -->
+
+          <div class="form-group">
+            <label for="Apellido">Apellido:</label>
+            <input type="text" class="form-control" id="apellido" required [(ngModel)]="model.Apellido" name="apellido" #apellido="ngModel">
+          </div>
+
+<!-- Celular -->
+
+        <div class="form-group">
+            <label for="telefono">Celular:</label>
+            <input type="number" class="form-control" id="telefono" required [(ngModel)]="model.Celular" name="telefono" #telefono="ngModel">
+            <div [hidden]="telefono.valid" class="alerta">
+                No te haremos Spam ni llamaremos a horas inadecuadas 
+            </div>
+        </div>
+
+<!-- Email -->
+
+        <div class="form-group">
+            <label for="mail">Email:</label>
+            <input type="mail" class="form-control" id="mail" [(ngModel)]="model.Email" name="email" #email="ngModel">
+            <div [hidden]="email.valid" class="alerta">
+                Es un email válido?
+            </div>
+        </div>
+
+<!-- Tipo de producto -->
+
+        <div class="form-group">
+            <label for="power">Producto que te gustó:</label>
+            <select class="form-control" id="tamano" required [(ngModel)]="model.Tipo" name="tamano" #tamano="ngModel">
+                <option *ngFor="let tamano of tamanos" [value]="tamano">{{tamano}}</option>
+                </select>
+                <div [hidden]="tamano.valid || tamano.pristine" class="alert alert-danger">
+                    Power is required
+                </div>
+        </div>
+
+    </form>
+  </div>
