@@ -1,4 +1,5 @@
-<div [hidden]="submitted">
+
+<div [hidden]="submitted" class="form">
 
     <img src={{usuarioLoggeado.Foto}} alt="{{usuarioLoggeado.Nombre}}" srcset="">
     <button type="submit" class="btn btn-success" (click)="onSubmit()" [disabled]="!clienteForm.form.valid">Enviar mis datos</button>
@@ -53,3 +54,4 @@
 
     </form>
   </div>
+  

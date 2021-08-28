@@ -1,27 +1,28 @@
 # ProjectAngularFront
+Página VillaIsis 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
+Proyecto realizado en Angular, se utilizaron elementos de estilo de distintas páginas.
+Para la instalación se requiere tener instalado la última versión estable del framework de Angular y el manejador de paquetes que guste (uso <code> npm </code>)
 
-## Development server
+En ese orden de ideas se procede con ubicarse en la carpeta del proyecto, luego <code> npm install </code> y al terminar <code> ng serve </code>, verificar que la dirección ser servidor que escogió Angular fue: http://localhost:4200.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Al acceder a este se podrá ver la página base del proyecto con cuatro componentes disponibles para visualización en content. Los links de estos son:
+-http://http://localhost:4200/component1
+-http://http://localhost:4200/component2
+-http://http://localhost:4200/component3
+-http://localhost:4200/contacto
 
-## Code scaffolding
+Los tres primeros tienen libertad de acceso, mientras que el último está restringido con un guard que redirige a home. Este se habilita si se hace login con una cuenta de Google y petición se realiza con el angular-social-login. 
+Al acceder se puede llenar un formulario y al hacer submit, se cierra la sesión advirtiendo al usuario que se han enviado los datos componentes del formulario y se redirige a home, dejando inhabilitado nuevamente el componente contacto.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Los datos son guardados en una API real y puedn ser leídos a posteriori.
 
-## Build
+Las posibles mejores que realizaré en un futuro será: 
+-Creación y conexión propia de una API para el login y el guardado de datos.
+-Responsive design.
+-Mejora en la interfaz y uso de UI/UX
+-Mejora en la modulación de componentes y assets
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Gracias por leer y quedo atento a su feedback del proyecto
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Dato de color: hay una versión anterior en línea disponible totalmente funcional pero sin mejoras en css: https://villaisis.web.app/home

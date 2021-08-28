@@ -1,6 +1,7 @@
 .imagen{
+    margin-top: 1%;
     width: 100%;
-    height: 500px;
+    height: 100%;
     background-image: url("../../assets/carousels/home/finca1.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;

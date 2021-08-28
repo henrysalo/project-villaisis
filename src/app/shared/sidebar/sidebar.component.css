@@ -1,19 +1,58 @@
-button{
-    margin: 50px;
-    color: white;
-    border-style: solid;
-    border-radius: 25px 25px 25px 25px;
-    border-color: gold;
-    list-style-type: none;
-    background-color: rgb(1, 71, 39);
-    transition: background-color .5s;
-    display: flex;
-    justify-content: center;
+.sidebar{
+  display: flexbox;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
 }
 
+.sidebarItem{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
 
-button:hover {
-    background-color: rgba(24, 218, 115, 0.89);
-    color: blanchedalmond;
-    border-color: blanchedalmond
+.productLink{
+  height: 8%;
+  width: 100%;
+  position: relative;
+  font-style: normal;
+  color: #5B5C5D;
+  border-style: none;
+  border-radius: 5px 5px 5px 5px;
+  transition: background-color .5s;
+}
+.productLink:hover{
+  background-color: white;
+}
+
+a:link {
+    color: 5B5C5D;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  a:active {
+    text-decoration: none;
+  }
+
+nav{
+    width: 20vw;
+    padding: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 400px) {
+  div nav {
+    position: relative;;
+  }
 }

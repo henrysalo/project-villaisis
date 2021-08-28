@@ -1,11 +1,17 @@
-nav {
+.navbar {
     /* background-color: black; */
     padding: 10px;
     display: flexbox;
     flex-direction: row;
-    background-image: url("../../../assets/fondoHeader2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    justify-content: center;
+    background:  white;
     position: relative;
+    height: 11.8%;
+}
+.productLink{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.productLink:active{
+    background-color: yellow;
 }

@@ -7,15 +7,14 @@
     padding: 0px;
 }
 .sidebar{
+    margin: 0px;
+    padding: 0px;
     height: 100%;
     width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../assets/sidebar2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #F0F2F5;
     position: relative;
 
 }
@@ -23,4 +22,5 @@
     height: 100%;
     width: 80%;
 }
+
 

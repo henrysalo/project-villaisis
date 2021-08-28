@@ -1,8 +1,40 @@
 <div class="sideBar">
+
+    <nav class="navbar">
+        <a class="iconoEmpresarial" href="#">
+            <img src="../../../assets/sidebar/favicon.png" alt="VillaIsis" width="100vh" class="d-inline-block align-text-top"> 
+            <img src="../../../assets/sidebar/VillaIsis.png" alt="" srcset="" width="100vh" >
+        </a> 
+    </nav>
+
+
     <ul class="sidebarItem">
-        <div *ngFor="let boton of listaBotones">
-            <button class="productLink" routerLinkActive='active' routerLink={{boton.link}}><p>{{boton.nombre}}</p></button>
+        <div class="productLink">
+            <a class="productLink" routerLinkActive='active' routerLink='component1'>
+                <p><img src="../../../assets/sidebar/aloe.svg" alt="" width="45" height="28">
+                <b>Cristales</b></p></a>
         </div>
-        <app-login></app-login>
+        <br>        
+        <div class="productLink">
+            <a class="productLink" routerLinkActive='active' routerLink='component2'>
+                <p><img src="../../../assets/sidebar/aloe-vera.svg" alt="" width="45" height="28">
+                <b>Pencas</b></p></a>
+        </div>
+        <br>        
+        <div class="productLink">
+            <a class="productLink" routerLinkActive='active' routerLink='component3'>
+                <p><img src="../../../assets/sidebar/Grupo 5.svg" alt="" width="45" height="28">
+                <b>Ornamentales</b></p></a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <app-login class="login"></app-login>
     </ul>
 </div>
